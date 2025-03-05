@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJ Shop</title>
+    <!--custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+
+    <video id="bg-video" autoplay loop muted>
+        <source src="videos/asus-rog.1920x1080.mp4" type="video/mp4">
+    </video>
+  
+<header class="header">
+    <a href="#" class="logo">
+        <img src="" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">Our Products</a>
+        <a href="#products">Top Products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get elements
+            const menuBtn = document.getElementById("menu-btn");
+            const navbar = document.querySelector(".header .navbar");
+    
+            // Toggle the 'active' class on the navbar when the menu button is clicked
+            menuBtn.addEventListener("click", function() {
+                navbar.classList.toggle("active");
+            });
+    
+            // Close the menu if the user clicks outside of the navbar
+            document.addEventListener("click", function(event) {
+                // Check if the click is outside of the navbar and the menu button
+                if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+                    navbar.classList.remove("active");
+                }
+            });
+    
+            // Optional: Add functionality for search and cart buttons
+            document.getElementById("search-btn").addEventListener("click", function() {
+                console.log("Search icon clicked");
+                // Add search functionality here
+            });
+    
+            document.getElementById("cart-btn").addEventListener("click", function() {
+                console.log("Cart icon clicked");
+                // Add cart functionality here
+            });
+        });
+    </script>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here. . .">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">   
+        <a href="#" class="btn">Checkout now</a>
+    </div>
+
+</header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Gaming Shop</h3>
+            <p>Buy Gaming Pcs, Parts, Accessories To Our Shop.
+                 Cheap Prices, Fast Delivery.</p>
+                 <a href="#" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+
+<section class="about" id="about">
+
+    <h1 class="heading"><span>about</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/PCabout.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>What make our shop special?</h3>
+            <p>Welcome to NJ shop, your ultimate destination for all things gaming! 
+                We’re not just a store—we’re a community of passionate gamers dedicated to bringing you the best gaming gear, accessories, and collectibles. 
+                Whether you're looking for the latest consoles, high-performance PCs, or must-have peripherals, we handpick every product to ensure top-tier quality. 
+                Our mission is to provide unbeatable deals, exclusive bundles, and expert advice to help you level up your gaming experience.</p>
+          <p>What makes us special? We’re gamers first, so we know what you need. 
+            With competitive prices, exclusive promotions, and expert support, 
+            we go beyond just selling products—we create a space where gamers connect and fuel their passion for gaming.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="menu" id="menu">
+
+    <h1 class="heading">our <span>products</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/wooting60he.png" alt="">
+            <h3>wooting 60he Black</h3>
+            <div class="price">€129.99 <span>€159.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/logitechgprox.png" alt="">
+            <h3>Logitech G Pro X White</h3>
+            <div class="price">€119.99 <span>€149.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/alienlaptop.jpg" alt="">
+            <h3>Alienware X17 R2 Gaming Laptop</h3>
+            <div class="price">€1599.99 <span>€1899.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/razerviperminise.png" alt="">
+            <h3>Razer Viper Mini Signature Edition</h3>
+            <div class="price">€259.00 <span>€299.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/c08703961.png" alt="">
+            <h3>HyperX Cloud III</h3>
+            <div class="price">€119.99 <span>€149,99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/hqcs.png" alt="">
+            <h3>HyperX QuadCast S</h3>
+            <div class="price">€129.99 <span>€179,49</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/z490.png" alt="">
+            <h3>MSI Motherboard Z490-A PRO</h3>
+            <div class="price">€149.99 <span>€199.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    <div>
+        =<a href="#" class="btnseemore">See More</a>
+    </div>    
+
+    </div>
+
+</section>
+
+
+<section class="products" id="products">
+
+    <h1 class="heading">TOP <span>Products</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/800x800 5070.png" alt="">
+            </div>
+            <div class="content">
+                <h3>RTX 5070</h3>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">€1299.99 <span>€1499.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/i9cpu.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Intel Core I9-13th Gen</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">€499.95 <span>€549.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/m2ssd.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fresh coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">€89.99 <span>€109.99</span></div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+</section>
+    
+
+<section class="review" id="review">
+
+    <h1 class="heading">costumer's <span>review</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>"Fast Shipping & Great Prices"
+                Ordered a graphics card that was out of stock everywhere else, and it arrived in just three days! 
+                The pricing was also better than most competitors. Will shop here again for my next upgrade.</p>
+                <img src="images/samanthaL" class="user" alt="">
+                <h3>Samantha L.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="images/mich" alt="" class="quote">
+            <p>"Good Service, Minor Delay"
+                Bought a prebuilt gaming rig, and while the product is fantastic, there was a slight delay in shipping. 
+                Customer service was responsive and kept me updated, so no big issue. Overall, very satisfied!</p>
+                <img src="images/micheald.jpg" class="user" alt="">
+                <h3>Michael D.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>This shop has everything I needed to upgrade my rig, from high-end GPUs to cooling systems. 
+                The staff is knowledgeable and helped me find the right components. Will be back for more!</p>
+                <img src="images/chirsp.jpg" class="user" alt="">
+                <h3>Chris P.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us</h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10351.454094870809!2d24.
+        10669140706608!3d56.94665688813115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece2da67e5755%3A0x31a5ada3a67400b4!
+        2sOLD%20TOWN%20ESTATE%20SIA!5e0!3m2!1sen!2slv!4v1733611500478!5m2!1sen!2slv" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputbox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading">our <span>blogs</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/buildPC.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">How to build PC</a>
+                <span>by Joseph beso / 5th, march 1953</span>
+                <p>Building a PC lets you customize performance and save money. With the right parts and steps, it's easier than you think.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/choosepc.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">How to choose PC that suits you </a>
+                <span>by John Titor / 27th, june 2030</span>
+                <p>The right PC depends on your needs and budget. Understanding specs ensures the best performance for you.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/cleanpc.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">How to clean PC</a>
+                <span>by George Orwell / 8th, june 1984</span>
+                <p>Cleaning your PC prevents overheating and improves performance. Regular dusting and maintenance keep it running smoothly.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="credit">created by <span>web designer</span> | all rights reserved</div>
+    </section>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
